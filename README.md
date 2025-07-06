@@ -24,3 +24,9 @@ python ModelTest.py
 Prediction: Dog, Confidence: 0.9987
 ```
 
+## ⚠️ Version Compatibility
+
+This model was trained using `fastai==2.7.12`. To run `app.py`, make sure to:
+
+```bash
+pip install fastai==2.7.12 torch==1.13.1 "numpy<2"

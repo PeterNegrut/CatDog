@@ -11,12 +11,7 @@ learn = load_learner('model (1).pkl')
 # Get user input
 img_path = input("Path to your image: ")
 
-# Confirm the file exists
-if not Path(img_path).exists():
-    print("❌ Image not found. Please check the file path.")
-    exit()
 
-    
 
 # Predict
 pred_class, pred_idx, probs = learn.predict(img_path)
